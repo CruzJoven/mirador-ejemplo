@@ -1,0 +1,38 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://example.com/iiif/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Ejemplo de imagen en Mirador",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://example.com/iiif/canvas/1",
+          "@type": "sc:Canvas",
+          "label": "Imagen 1",
+          "width": 800,
+          "height": 600,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://example.com/iiif/UploadedImage0.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "width": 800,
+                "height": 600,
+                "service": {
+                  "@id": "https://example.com/iiif/UploadedImage0.jpg",
+                  "profile": "http://iiif.io/api/image/2/level1.json"
+                }
+              },
+              "on": "https://example.com/iiif/canvas/1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
