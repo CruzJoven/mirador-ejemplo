@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mirador Ejemplo</title>
+  <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+</head>
+<body>
+  <div id="mirador" style="height: 800px;"></div>
+  <script>
+    Mirador.viewer({
+      id: "mirador",
+      windows: [{
+        manifestId: "https://cruzjoven.github.io/mirador-ejemplo/manifest.json",
+        canvasId: "https://cruzjoven.github.io/mirador-ejemplo/canvas/1"
+      }]
+    });
+  </script>
+</body>
+</html>

@@ -1,1 +1,34 @@
-eliminado
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://cruzjoven.github.io/mirador-ejemplo/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Ejemplo de imagen en Mirador",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://cruzjoven.github.io/mirador-ejemplo/canvas/1",
+          "@type": "sc:Canvas",
+          "label": "P\u00e1gina 1",
+          "width": 800,
+          "height": 600,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://cruzjoven.github.io/mirador-ejemplo/UploadedImage0.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "width": 800,
+                "height": 600
+              },
+              "on": "https://cruzjoven.github.io/mirador-ejemplo/canvas/1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
